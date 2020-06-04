@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Realtime Editor/Collaboration</title>
+    <style type="text/css" media="screen">
+        body {
+            overflow: hidden;
+        }
+
+        #editor {
+            margin: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>Realtime Editor/Collaboration</h3>
+    <div>
+        <textarea rows="30" cols="50" id="editor" style="background-color:dimgrey;color:white"
+            placeholder="Type Your Text..."></textarea>
+    </div>
+</body>
+<script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+<script src="./client.js"></script>
+
+</html>
